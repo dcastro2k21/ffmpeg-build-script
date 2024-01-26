@@ -734,10 +734,6 @@ fi
   execute make -j $MJOBS
   execute make install
 
-  build_done "libtheora" $CURRENT_PACKAGE_VERSION
-fi
-CONFIGURE_OPTIONS+=("--enable-libtheora")
-
 
 ##
 ## image library
