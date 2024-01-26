@@ -721,11 +721,6 @@ if build "opus" "1.4"; then
   build_done "opus" $CURRENT_PACKAGE_VERSION
 fi
 
-if build "libtheora" "1.1.1"; then
-  download "https://ftp.osuosl.org/pub/xiph/releases/theora/libtheora-$CURRENT_PACKAGE_VERSION.tar.gz"
-  sed "s/-fforce-addr//g" configure >configure.patched
-  chmod +x configure.patched
-  mv configure.patched configure
 
   if ! $MACOS_M1; then
     ##BEGIN CONFIG.GUESS PATCH -- Updating config.guess file. Which allowed me to compile on aarch64 (ARMv8) [linux kernel 4.9 Ubuntu 20.04]
