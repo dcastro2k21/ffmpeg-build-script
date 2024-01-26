@@ -730,11 +730,6 @@ fi
     ##END OF CONFIG.GUESS PATCH
   fi
 
-  execute ./configure --prefix="${WORKSPACE}" --with-ogg-libraries="${WORKSPACE}"/lib --with-ogg-includes="${WORKSPACE}"/include/ --with-vorbis-libraries="${WORKSPACE}"/lib --with-vorbis-includes="${WORKSPACE}"/include/ --enable-static --disable-shared --disable-oggtest --disable-vorbistest --disable-examples --disable-asm --disable-spec
-  execute make -j $MJOBS
-  execute make install
-
-
 ##
 ## image library
 ##
