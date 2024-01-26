@@ -598,7 +598,7 @@ if $NONFREE_AND_GPL; then
 
     build_done "xvidcore" $CURRENT_PACKAGE_VERSION
   fi
-  CONFIGURE_OPTIONS+=("--enable-libxvid")
+  CONFIGURE_OPTIONS+=("--disable-libxvid")
 fi
 
 if $NONFREE_AND_GPL; then
